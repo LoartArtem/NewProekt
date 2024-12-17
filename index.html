@@ -2,29 +2,64 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>New Proekt</title>
+   <title>BarberShop</title>
    <!--Подключаю стили-->
    <link rel="stylesheet" href="./scss/style.css">
 </head>
 <body>
-   <header class="header">
-      <nav class="header__nav">
-         <ul class="header__menu">
-            <li>История</li>
-            <li>О нас</li>
-            <li>ФОТО</li>
-            <li>Контакты сайта</li>
-         </ul>
-         <ul class="header__adress">
-            <li>Eßmail</li>
-            <li>Post</li>
-            <li>ФОТО</li>
-            <li>Контакты сайта</li>
-         </ul>
-      
+   <!--Верхняя часть сайта -->
+   <header class="header"> 
+      <div class="container">
+         <div class="header__flex">
+            <nav class="header__nav">
+               <a href="./index.html">
+                  <img src="./" alt="Logo BarberShop"/>
+               </a>
+               <!--Меню сайта -->
+               <ul class="header__menu">
+                  <li><a class="link" href="#traditions-section">О нас</a></li>
+                  <li><a class="link" href="#chefs-section">Услуги и цены</a></li>
+                  <li><a class="link" href="#formats-section">Мастера</a></li>
+                  <li><a class="link" href="#contact-section">Контакты</a></li>
+               </ul>
+            </nav>
+            <div class="header__telefon">  
+               <a class="header__telefon-text link" href="tel:+380441111111">
+                  +38 044 111 11 11
+               </a>
+            </div>
+            <button class="header__button button modal-btn-open" type="button">
+               онлайн-запись
+            </button>
 
-      </nav>
+            <!--
+            <button class="header__burger menu-btn-open" type="button">
+               <svg class="burger" width="24" height="24">
+                  <use href="./images/icons.svg#icon-menu"></use>
+               </svg>
+            </button>
+            --Кнопка для мобильного меню--
+            <div class="mobile-menu">
+               <button class="mobile-menu__menu-btn-close menu-btn-close" type="button">Clouse</button>
+            </div> 
+         -->
+            
+         </div>
+      </div>
    </header>
-   
+   <main>
+
+      <!-- Страница 1 -->
+      <section class="hero-section">
+         <div class="container">
+            <div class="hero-section__sub-title">A hair salon for men in Kyiv</div>
+            <h1 class="hero-section__title">BarberShop</h1>
+            <div class="hero-section__text">
+               Мы эксперты в модных мужских стрижках.<br>
+               Работаем быстро, осторожно и со вкусом.
+            </div>
+         </div>
+      </section>
+
 </body>
 </html>
