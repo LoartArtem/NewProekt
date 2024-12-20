@@ -1,0 +1,21 @@
+.masters-section{
+   background-color: var(--color-text-begraund);
+
+   &__flex{
+      display: flex;
+      gap: 20px;
+   }
+
+   &__item{
+   
+   }
+
+   &__item-foto{
+      max-width: 370px;
+      max-height: 246px;
+      
+   }
+
+
+
+}

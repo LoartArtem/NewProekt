@@ -1,0 +1,32 @@
+
+.information-section{
+   height: 705px;
+   width: 100%;
+
+   &__flex{
+      padding: 160px 55px 100px 55px;
+      display: flex;
+      gap: 50px;
+      width: 100%; /* Флекс-контейнер занимает всю ширину */
+   }
+
+   &__flex-foto{
+      display: flex;
+      gap: 25px;
+      width: 50%;
+   }
+
+   &__foto{
+      max-height: 445px;
+      max-width: 270px;
+   }
+
+   &__flex-text{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: var(--color-text-dark);
+      width: 50%;
+   }
+
+}

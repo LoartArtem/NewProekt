@@ -1,0 +1,30 @@
+.liene{
+   color: var(--color-text-dark);
+   font-size: 11px;
+   font-weight: 600;
+   position: relative;
+   padding-left: 70px;
+}
+
+/*----Блок створення ліній ---*/
+   .liene::before {
+      display: block;
+      width: 60px;
+      height: 2px; /* Высота линии */
+      background-color: var(--color-text-dark); /* Цвет линии */
+      content: ""; /* Обязательно для отображения псевдоэлемента */
+      position: absolute;
+      bottom: 5px; /* Смещение линии вниз */
+      left: 0; /* Линия выравнивается по левому краю */
+   }
+
+
+.text14{
+   font-size: 14px;
+   line-height: 1.5;
+}
+
+.text18{
+   font-size: 18px;
+   line-height: 1.5;
+}

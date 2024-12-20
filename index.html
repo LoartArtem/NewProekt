@@ -12,9 +12,6 @@
       <div class="container">
          <div class="header__flex">
             <nav class="header__nav">
-               <a class="header__logo" href="./index.html">
-                  <img src="./img/Logo.svg" alt="Logo BarberShop"/>
-               </a>
                <!--Меню сайта -->
                <ul class="header__menu">
                   <li><a class="link" href="#traditions-section">О нас</a></li>
@@ -27,39 +24,97 @@
                <a class="header__telefon-text link" href="tel:+380441111111">
                   +38 044 111 11 11
                </a>
-            </div>
             <button class="header__button button modal-btn-open" type="button">
                онлайн-запись
             </button>
-
-            <!--
-            <button class="header__burger menu-btn-open" type="button">
-               <svg class="burger" width="24" height="24">
-                  <use href="./images/icons.svg#icon-menu"></use>
-               </svg>
-            </button>
-            --Кнопка для мобильного меню--
-            <div class="mobile-menu">
-               <button class="mobile-menu__menu-btn-close menu-btn-close" type="button">Clouse</button>
-            </div> 
-         -->
-         
+            </div>
+         </div>
+         <div class="header__links">
+            <a class="header__logo" href="./index.html">
+               <img src="./img/Logo.svg" alt="Logo BarberShop"/>
+            </a>
+            <ul class="header__social">
+               <li><a class="link" href="#traditions-section">Instagram</a></li>
+               <li><a class="link" href="#chefs-section">Youtube</a></li>
+            </ul>
          </div>
       </div>
    </header>
    <main>
-
       <!-- Страница 1 -->
       <section class="hero-section">
          <div class="container">
-            <div class="hero-section__sub-title">A hair salon for men in Kyiv</div>
+            <div class="hero-section__cont">
+               <div class="hero-section__sub-title">A hair salon for men in Kyiv</div>
             <h1 class="hero-section__title">BarberShop</h1>
             <div class="hero-section__text">
                Мы эксперты в модных мужских стрижках.<br>
                Работаем быстро, осторожно и со вкусом.
             </div>
+            </div>
          </div>
       </section>
+      <!-- Страница 2 -->
+      <section class="information-section">
+         <div class="container">
+            <div class="information-section__flex">
+               <div class="information-section__flex-foto">
+                  <div class="information-section__foto">
+                     <img src="./img/inform1.jpg" alt="inform foto">
+                  </div>
+                  <div class="information-section__foto">
+                     <img src="./img/inform2.jpg" alt="inform foto">
+                  </div>
+               </div>
+               <div class="information-section__flex-text">
+                  <p class="liene">О НАС</p>
+                  <h2 class="information-section__title title">Лучший Барбершоп твоего города</h2>
+                  <p class="text18">
+                     Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
+                  </p>
+                  <p class="text14">
+                     Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. 
+                     И когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним.
+                     Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!
+                  </p>
+                  <button class="information-section__button button modal-btn-open" type="button">
+                     онлайн-запись
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Страница 5 -->
+      <section class="masters-section">
+         <div class="container">
+            <p class="liene">для настоящих ценителей атмосферы</p>
+            <h2 class="title">Наши мастера</h2>
+            <div class="masters-section__flex">
+               <div class="masters-section__item">
+                  <div class="masters-section__item-foto">
+                     <img src="./img/mastersimg1.jpg" alt="masters">
+                  </div>
+                  <div class="masters-section__item-tekst"></div>
+                  <div class="masters-section__item-social"></div>
+               </div>
+               <div class="masters-section__item">
+                  <div class="masters-section__item-foto">
+                     <img src="./img/mastersimg2.jpg" alt="maters">
+                  </div>
+                  <div class="masters-section__item-tekst"></div>
+                  <div class="masters-section__item-social"></div>
+               </div>
+               <div class="masters-section__item">
+                  <div class="masters-section__item-foto">
+                     <img src="./img/mastersimg3.jpg" alt="masters">
+                  </div>
+                  <div class="masters-section__item-tekst"></div>
+                  <div class="masters-section__item-social"></div>
+               </div>
+            </div>
 
+         </div>
+      </section>
+   </main>
 </body>
 </html>

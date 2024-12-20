@@ -4,6 +4,8 @@
   --color-text: rgba(255, 255, 255, 1); /*Присваиваю переменную главному брендовому цвету*/
   --color-text-hover: rgba(255, 108, 0, 1);
   --color-text-gray: rgba(157, 164, 189, 1);
+  --color-text-dark: rgba(48, 48, 48, 1);
+  --color-text-begraund: rgba(247, 247, 247, 1);
 }
 
 /*Присваиваю переменную для всіх типів гаджетів*/
@@ -13,6 +15,36 @@
 }
 .link:hover {
   color: var(--color-text-hover);
+}
+
+.liene {
+  color: var(--color-text-dark);
+  font-size: 11px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 70px;
+}
+
+/*----Блок створення ліній ---*/
+.liene::before {
+  display: block;
+  width: 60px;
+  height: 2px; /* Высота линии */
+  background-color: var(--color-text-dark); /* Цвет линии */
+  content: ""; /* Обязательно для отображения псевдоэлемента */
+  position: absolute;
+  bottom: 5px; /* Смещение линии вниз */
+  left: 0; /* Линия выравнивается по левому краю */
+}
+
+.text14 {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.text18 {
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .button {
@@ -79,6 +111,20 @@ body {
   font-weight: 500;
 }
 
+/*   */
+.container {
+  max-width: 1280px; /*-Максимальная ширина при растягивании -*/
+  width: 100%; /*-Отображает всегда полностью не сжимая -*/
+  margin: 0 auto; /*-Центрируем по центру текст -*/
+  padding: 0px 24px; /*-Что-бы контенер не прилипал -*/
+}
+
+.title {
+  color: var(--color-text-dark);
+  font-size: 42px;
+  font-weight: 700;
+}
+
 .header {
   font-size: 14px;
   position: absolute;
@@ -87,33 +133,124 @@ body {
   width: 100%;
   font-weight: 600;
   padding-top: 16px;
+  /*----Блок створення ліній ---*/
+  /*----Блок для зміщення ліній ---*/
+  /*------------------------------------------------*/
 }
 .header__flex {
   display: flex;
+  justify-content: space-between; /* Размещаем элементы по краям */
+  gap: 50px;
+  flex-grow: 1; /*Розтягує елементи на все вільне місце*/
+  align-items: center; /*Вирівнювання по висоті*/
 }
 .header__nav {
   display: flex;
+  align-items: center;
+}
+.header__links {
+  display: flex;
+  flex-direction: column;
+  height: 608px;
+  width: 100px;
+  border: 2px solid red;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 150px;
 }
 .header__logo {
-  display: block;
   height: 56px;
   width: 66px;
-  fill: white;
+  top: 0;
+  right: 0;
+  background: white;
+}
+.header__social {
+  display: block;
+  gap: 25px;
+  display: flex;
+  transform: rotate(-90deg);
+  bottom: 0px;
+}
+.header__social ::after {
+  display: block;
+  width: 60px;
+  border: 2px solid var(--color-text-dark);
+  content: "";
+}
+.header__social ::after {
+  position: absolute;
+  bottom: 8px;
+  right: 170px;
 }
 .header__menu {
+  padding-left: 25px;
   display: flex;
   font-size: 16px;
   line-height: 3;
   gap: 40px;
 }
 .header__telefon {
+  display: flex;
   font-size: 12px;
+  gap: 25px;
+  align-items: center;
 }
-.hero-section {
+
+.hero-section__cont {
   height: 680px;
+  padding-top: 320px;
   background-image: url(/img/Sli1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: cover;
+}
+.hero-section__sub-title {
+  text-align: center;
+}
+.hero-section__title {
+  text-align: center;
+}
+.hero-section__text {
+  text-align: center;
+}
+
+.information-section {
+  height: 705px;
+  width: 100%;
+}
+.information-section__flex {
+  padding: 160px 55px 100px 55px;
+  display: flex;
+  gap: 50px;
+  width: 100%; /* Флекс-контейнер занимает всю ширину */
+}
+.information-section__flex-foto {
+  display: flex;
+  gap: 25px;
+  width: 50%;
+}
+.information-section__foto {
+  max-height: 445px;
+  max-width: 270px;
+}
+.information-section__flex-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--color-text-dark);
+  width: 50%;
+}
+
+.masters-section {
+  background-color: var(--color-text-begraund);
+}
+.masters-section__flex {
+  display: flex;
+  gap: 20px;
+}
+.masters-section__item-foto {
+  max-width: 370px;
+  max-height: 246px;
 }/*# sourceMappingURL=style.css.map */

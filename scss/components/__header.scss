@@ -7,23 +7,63 @@
    font-weight: 600;
    padding-top: 16px;
 
-
    &__flex{
       display: flex;
+      justify-content: space-between; /* Размещаем элементы по краям */
+      gap: 50px;
+      flex-grow: 1; /*Розтягує елементи на все вільне місце*/
+      align-items: center; /*Вирівнювання по висоті*/
    }
 
    &__nav{
       display: flex;
+      align-items: center;
+   }
+
+   &__links{
+      display: flex;
+      flex-direction: column;
+      height: 608px;
+      width: 100px;
+      border: 2px solid red;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 150px;
    }
 
    &__logo{
-      display: block;
       height: 56px;
       width: 66px;
-      fill: white;
+      top: 0;
+      right: 0;
+      background: white;
    }
 
+   &__social{
+      display: block;
+      gap: 25px;
+      display: flex;
+      transform: rotate(-90deg);
+      bottom: 0px;
+   }
+   /*----Блок створення ліній ---*/
+   &__social ::after {
+         display: block;
+         width: 60px;
+         border: 2px solid var(--color-text-dark);
+         content: "";
+   }
+
+   /*----Блок для зміщення ліній ---*/
+   &__social ::after {
+   position: absolute;
+   bottom: 8px;
+   right: 170px;
+   }
+/*------------------------------------------------*/
+
    &__menu{
+      padding-left: 25px;
       display: flex;
       font-size: 16px;
       line-height: 3;
@@ -31,12 +71,13 @@
    }
 
    &__telefon{
+      display: flex;
       font-size: 12px;
+      gap: 25px;
+      align-items: center;
    }
 
-   &__button{
-      
    
-   }
+
 
 }

@@ -1,9 +1,25 @@
 
 .hero-section{
-   height: 680px;
-   background-image: url(/img/Sli1.jpg);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: 100%;
-   background-size: cover;
+   
+   &__cont{
+      height: 680px;
+      padding-top: 320px;
+      background-image: url(/img/Sli1.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-size: cover;
+   }
+
+   &__sub-title{
+      text-align: center; 
+   }
+
+   &__title{
+      text-align: center; 
+   }
+
+   &__text{
+      text-align: center; 
+   }
 }
