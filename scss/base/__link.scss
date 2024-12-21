@@ -6,3 +6,56 @@
       color: var(--color-text-hover);
    } 
 }
+
+.link-instagram {
+   width: 20px; /* Ширина */
+   height: 20px; /* Высота */
+   background-color: var(--color-text-dark); /* Цвет до ховера */
+   mask: url('/img/icon/instagram.svg') no-repeat center;
+   mask-size: contain;
+   transition: background-color 0.3s ease;
+ 
+ &:hover {
+   background-color: var(--color-text-hover); /* Цвет на ховере */
+   }
+}
+
+.link-facebook {
+   width: 20px; /* Ширина */
+  height: 20px; /* Высота */
+   background-color: var(--color-text-dark); /* Цвет до ховера */
+   mask: url('/img/icon/facebook.svg') no-repeat center;
+   mask-size: contain;
+   transition: background-color 0.3s ease;
+ 
+ &:hover {
+   background-color: var(--color-text-hover); /* Цвет на ховере */
+   }
+}
+
+.link-twitter {
+   width: 20px; /* Ширина */
+  height: 20px; /* Высота */
+   background-color: var(--color-text-dark); /* Цвет до ховера */
+   mask: url('/img/icon/twitter.svg') no-repeat center;
+   mask-size: contain;
+   transition: background-color 0.3s ease;
+
+   &:hover {
+   background-color: var(--color-text-hover); /* Цвет на ховере */
+   }
+}
+
+.link-linkedin {
+   width: 20px; /* Ширина */
+   height: 20px; /* Высота */
+   background-color: var(--color-text-dark); /* Цвет до ховера */
+   mask: url('/img/icon/linkedin.svg') no-repeat center;
+   mask-size: contain;
+   transition: background-color 0.3s ease;
+
+   &:hover {
+   background-color: var(--color-text-hover); /* Цвет на ховере */
+   }
+}
+

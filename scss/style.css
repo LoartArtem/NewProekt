@@ -6,6 +6,7 @@
   --color-text-gray: rgba(157, 164, 189, 1);
   --color-text-dark: rgba(48, 48, 48, 1);
   --color-text-begraund: rgba(247, 247, 247, 1);
+  --color-text-footer: rgba(25, 28, 38, 1);
 }
 
 /*Присваиваю переменную для всіх типів гаджетів*/
@@ -15,6 +16,54 @@
 }
 .link:hover {
   color: var(--color-text-hover);
+}
+
+.link-instagram {
+  width: 20px; /* Ширина */
+  height: 20px; /* Высота */
+  background-color: var(--color-text-dark); /* Цвет до ховера */
+  mask: url("/img/icon/instagram.svg") no-repeat center;
+  mask-size: contain;
+  transition: background-color 0.3s ease;
+}
+.link-instagram:hover {
+  background-color: var(--color-text-hover); /* Цвет на ховере */
+}
+
+.link-facebook {
+  width: 20px; /* Ширина */
+  height: 20px; /* Высота */
+  background-color: var(--color-text-dark); /* Цвет до ховера */
+  mask: url("/img/icon/facebook.svg") no-repeat center;
+  mask-size: contain;
+  transition: background-color 0.3s ease;
+}
+.link-facebook:hover {
+  background-color: var(--color-text-hover); /* Цвет на ховере */
+}
+
+.link-twitter {
+  width: 20px; /* Ширина */
+  height: 20px; /* Высота */
+  background-color: var(--color-text-dark); /* Цвет до ховера */
+  mask: url("/img/icon/twitter.svg") no-repeat center;
+  mask-size: contain;
+  transition: background-color 0.3s ease;
+}
+.link-twitter:hover {
+  background-color: var(--color-text-hover); /* Цвет на ховере */
+}
+
+.link-linkedin {
+  width: 20px; /* Ширина */
+  height: 20px; /* Высота */
+  background-color: var(--color-text-dark); /* Цвет до ховера */
+  mask: url("/img/icon/linkedin.svg") no-repeat center;
+  mask-size: contain;
+  transition: background-color 0.3s ease;
+}
+.link-linkedin:hover {
+  background-color: var(--color-text-hover); /* Цвет на ховере */
 }
 
 .liene {
@@ -111,12 +160,12 @@ body {
   font-weight: 500;
 }
 
-/*   */
+/* Стили контейнера содержимого  */
 .container {
   max-width: 1280px; /*-Максимальная ширина при растягивании -*/
   width: 100%; /*-Отображает всегда полностью не сжимая -*/
   margin: 0 auto; /*-Центрируем по центру текст -*/
-  padding: 0px 24px; /*-Что-бы контенер не прилипал -*/
+  padding: 0px 55px; /*-Что-бы контенер не прилипал -*/
 }
 
 .title {
@@ -221,7 +270,7 @@ body {
   width: 100%;
 }
 .information-section__flex {
-  padding: 160px 55px 100px 55px;
+  padding: 160px 0px 100px 0px;
   display: flex;
   gap: 50px;
   width: 100%; /* Флекс-контейнер занимает всю ширину */
@@ -245,12 +294,35 @@ body {
 
 .masters-section {
   background-color: var(--color-text-begraund);
+  height: 890px;
 }
 .masters-section__flex {
   display: flex;
-  gap: 20px;
+  gap: 30px;
+}
+.masters-section__item {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 502px;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid gold;
 }
 .masters-section__item-foto {
   max-width: 370px;
   max-height: 246px;
+}
+.masters-section__item-icon {
+  display: flex;
+  gap: 20px;
+}
+
+.histori-section {
+  height: 679px;
+}
+
+.footer {
+  background-color: var(--color-text-footer);
+  height: 644px;
 }/*# sourceMappingURL=style.css.map */
