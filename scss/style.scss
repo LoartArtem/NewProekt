@@ -12,6 +12,8 @@
 
 @import './base/_body';
 
+@import url('./base/__coneiner-body.scss');
+
 @import './base/_container';
 
 @import './base/_title';
@@ -22,10 +24,13 @@
 
 @import './components/_information-section';
 
+@import './components/_preise-section';
 
 @import './components/_masters-section';
 
 @import './components/_histori-section';
+
+@import './components/_contact-section';
 
 @import './components/_footer';
 

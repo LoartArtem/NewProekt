@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*------- Присвоение переменных ----*/
+@import url("./base/__coneiner-body.scss");
 :root {
   --color-text: rgba(255, 255, 255, 1); /*Присваиваю переменную главному брендовому цвету*/
   --color-text-hover: rgba(255, 108, 0, 1);
@@ -97,6 +98,7 @@
 }
 
 .button {
+  display: block;
   height: 40px;
   width: 160px;
   font-size: 12px;
@@ -109,6 +111,23 @@
 }
 .button:hover {
   background-color: var(--color-text-hover);
+}
+
+.button-black {
+  display: block;
+  height: 40px;
+  width: 160px;
+  font-size: 12px;
+  color: var(--color-text-dark);
+  font-weight: 600;
+  border: 1px solid var(--color-text-hover);
+  border-radius: 25px;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+.button-black:hover {
+  background-color: var(--color-text-hover);
+  color: var(--color-text);
 }
 
 ul {
@@ -158,14 +177,15 @@ body {
   font-family: sans-serif;
   font-size: 14px;
   font-weight: 500;
+  background-color: black;
 }
 
 /* Стили контейнера содержимого  */
 .container {
-  max-width: 1280px; /*-Максимальная ширина при растягивании -*/
+  max-width: 1170px; /*-Максимальная ширина при растягивании -*/
   width: 100%; /*-Отображает всегда полностью не сжимая -*/
   margin: 0 auto; /*-Центрируем по центру текст -*/
-  padding: 0px 55px; /*-Что-бы контенер не прилипал -*/
+  padding: 0px 5px; /*-Что-бы контенер не прилипал -*/
 }
 
 .title {
@@ -246,6 +266,9 @@ body {
   align-items: center;
 }
 
+.hero-section {
+  background-color: var(--color-text);
+}
 .hero-section__cont {
   height: 680px;
   padding-top: 320px;
@@ -268,6 +291,7 @@ body {
 .information-section {
   height: 705px;
   width: 100%;
+  background-color: var(--color-text);
 }
 .information-section__flex {
   padding: 160px 0px 100px 0px;
@@ -290,6 +314,50 @@ body {
   justify-content: space-between;
   color: var(--color-text-dark);
   width: 50%;
+}
+
+.preis-section {
+  height: 718px;
+  width: 100%;
+  background-image: url("/img/preisbg.png");
+  background-color: rgba(9, 11, 19, 0.9);
+  padding-top: 100px;
+}
+.preis-section__mini {
+  color: var(--color-text);
+  opacity: 60%;
+}
+.preis-section__title {
+  color: var(--color-text);
+  padding: 25px 0;
+}
+.preis-section__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.preis-section__item {
+  display: flex;
+  flex-direction: column;
+  width: 585px;
+  height: 240px;
+  padding: 40px 30px;
+  align-items: space-between;
+  background-color: rgba(9, 11, 19, 0.6);
+}
+.preis-section__item-flex {
+  opacity: 60%;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 2.5;
+}
+.preis-section__button {
+  position: relative;
+  top: 80px; /* Смещает кнопку вниз */
+  left: 505px; /* Смещает кнопку вправо */
 }
 
 .masters-section {
@@ -320,9 +388,41 @@ body {
 
 .histori-section {
   height: 679px;
+  background-color: var(--color-text);
+  padding-bottom: 50px;
+}
+.histori-section__flex {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.histori-section__flex-item {
+  height: 360px;
+  width: 270px;
+}
+
+.contact-section {
+  height: 644px;
+  background-color: blueviolet;
 }
 
 .footer {
-  background-color: var(--color-text-footer);
-  height: 644px;
+  background-color: var(--color-text-begraund);
+}
+.footer__container {
+  height: 127px;
+  display: flex;
+  font-size: 11px;
+  font-weight: 600;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__blank {
+  color: rgb(157, 164, 189);
+}
+.footer__social {
+  display: flex;
+  gap: 30px;
+  color: rgb(157, 164, 189);
+  background-color: aqua;
 }/*# sourceMappingURL=style.css.map */

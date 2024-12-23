@@ -1,3 +1,20 @@
 .histori-section{
    height: 679px;
+   background-color: var(--color-text);
+   padding-bottom: 50px;
+
+   &__flex{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 25px;
+   }
+
+   &__flex-item{
+      height: 360px;
+      width: 270px;
+      
+   
+   }
+   
+
 }

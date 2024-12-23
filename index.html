@@ -7,16 +7,17 @@
    <link rel="stylesheet" href="./scss/style.css">
 </head>
 <body>
-   <!--Верхняя часть сайта -->
+   <div class="coneiner-body">
+      <!--Верхняя часть сайта -->
    <header class="header"> 
       <div class="container">
          <div class="header__flex">
             <nav class="header__nav">
                <!--Меню сайта -->
                <ul class="header__menu">
-                  <li><a class="link" href="#traditions-section">О нас</a></li>
-                  <li><a class="link" href="#chefs-section">Услуги и цены</a></li>
-                  <li><a class="link" href="#formats-section">Мастера</a></li>
+                  <li><a class="link" href="#information-section">О нас</a></li>
+                  <li><a class="link" href="#preis-section">Услуги и цены</a></li>
+                  <li><a class="link" href="#masters-section">Мастера</a></li>
                   <li><a class="link" href="#contact-section">Контакты</a></li>
                </ul>
             </nav>
@@ -55,7 +56,7 @@
          </div>
       </section>
       <!-- Страница 2 -->
-      <section class="information-section">
+      <section class="information-section" id="information-section">
          <div class="container">
             <div class="information-section__flex">
                <div class="information-section__flex-foto">
@@ -77,15 +78,63 @@
                      И когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним.
                      Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!
                   </p>
-                  <button class="information-section__button button modal-btn-open" type="button">
+                  <button class="information-section__button button-black modal-btn-open" type="button">
                      онлайн-запись
                   </button>
                </div>
             </div>
          </div>
       </section>
+      <!-- Страница 3 -->
+      <section class="preis-section" id="preis-section">
+         <div class="container">
+            <p class="preis-section__mini liene">Проведи время в компании лучших мастеров</p>
+            <h2 class="preis-section__title title">Услуги и цены</h2>
+            <div class="preis-section__flex">
+               <div class="preis-section__item">
+                  <ul class="preis-section__item-flex">
+                     <li>Мужская стрижка</li>
+                     <li>от 300 грн.</li>
+                  </ul>
+                  <ul class="preis-section__item-flex">
+                     <li>Стрижка бороды</li>
+                     <li>от 200 грн.</li>
+                  </ul>
+                  <ul class="preis-section__item-flex">
+                     <li>Стрижка усов</li>
+                     <li>от 200 грн.</li>
+                  </ul>
+                  <ul class="preis-section__item-flex">
+                     <li>Бритье опасной бритвой</li>
+                     <li>от 200 грн.</li>
+                  </ul>
+               </div>
+               <div class="preis-section__item">
+                  <ul class="preis-section__item-flex">
+                     <li>Cтрижка у стажера</li>
+                     <li>от 50 грн.</li>
+                  </ul>
+                  <ul class="preis-section__item-flex">
+                     <li>Стрижка под насадку</li>
+                     <li>от 200 грн.</li>
+                  </ul>
+                  <ul class="preis-section__item-flex">
+                     <li>Детская стрижка (до 12 лет)</li>
+                     <li>от 300 грн.</li>
+                  </ul>
+                  <ul class="preis-section__item-flex">
+                     <li>Камуфлирование седины</li>
+                     <li>от 200 грн.</li>
+                  </ul>
+               </div>
+            </div>
+            <button class="preis-section__button button modal-btn-open" type="button">
+               онлайн-запись
+            </button>
+         </div>
+      </section>
       <!-- Страница 5 -->
-      <section class="masters-section">
+      <section class="masters-section" id="masters-section">
          <div class="container">
             <p class="liene">для настоящих ценителей атмосферы</p>
             <h2 class="title">Наши мастера</h2>
@@ -195,23 +244,41 @@
       <!-- Страница 6 -->
       <section class="histori-section">
          <div class="container">
-            <h3 class="link">На латинском языке “барба” означает “борода”</h3>
+            <h3 class="liene">На латинском языке “барба” означает “борода”</h3>
                <div class="histori-section__flex">
                   <div class="histori-section__flex-item">
-
+                     <img src="./img/Rectangle 25.jpg" alt="history foto">
                   </div>
                   <div class="histori-section__flex-item">
-                     
+                     <img src="./img/Rectangle 26.jpg" alt="history foto">
                   </div>
                   <div class="histori-section__flex-item">
-                     
+                     <img src="./img/Rectangle 27.jpg" alt="history foto">
+                  </div>
+                  <div class="histori-section__flex-item">
+                     <img src="./img/Rectangle 28.jpg" alt="history foto">
                   </div>
                </div>
          </div>
       </section>
+      <!-- Страница 7 -->
+      <section class="contact-section" id="contact-section">
+         <div class="container">
+           
+         </div>
+      </section>
    </main>
    <footer class="footer">
-
+      <div class="footer__container container">
+         <div class="footer__blank">
+            <p>&copy; Copyright 2020</p>
+         </div>
+         <div class="footer__social liene">
+            <div><a class="link" href="#traditions-section">Instagram</a></div>
+            <div><a class="link" href="#chefs-section">Youtube</a></div>
+         </div>
+      </div>
    </footer>
+   </div>
 </body>
 </html>
