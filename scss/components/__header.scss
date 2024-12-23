@@ -5,7 +5,7 @@
    left: 0;
    width: 100%;
    font-weight: 600;
-   padding-top: 16px;
+  
 
    &__flex{
       display: flex;
@@ -13,22 +13,14 @@
       gap: 50px;
       flex-grow: 1; /*Розтягує елементи на все вільне місце*/
       align-items: center; /*Вирівнювання по висоті*/
+      margin: 40px 5px 0 0;
+
    }
 
    &__nav{
+      padding-left: 20px;
       display: flex;
       align-items: center;
-   }
-
-   &__links{
-      display: flex;
-      flex-direction: column;
-      height: 608px;
-      width: 100px;
-      border: 2px solid red;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 150px;
    }
 
    &__logo{
@@ -39,18 +31,27 @@
       background: white;
    }
 
-   &__social{
-      display: block;
-      gap: 25px;
+   &__links{
       display: flex;
+      flex-direction: column;
+      height: 590px;
+      width: 100px;
+      justify-content: end;
+   }
+
+   
+
+   &__social{
+      display: flex;
+      gap: 30px;
       transform: rotate(-90deg);
-      bottom: 0px;
+      margin-bottom: 140px;
    }
    /*----Блок створення ліній ---*/
    &__social ::after {
-         display: block;
+      position: absolute;
          width: 60px;
-         border: 2px solid var(--color-text-dark);
+         border: 1px solid var(--color-text-dark);
          content: "";
    }
 
@@ -58,12 +59,12 @@
    &__social ::after {
    position: absolute;
    bottom: 8px;
-   right: 170px;
+   right: 120px;
    }
 /*------------------------------------------------*/
 
    &__menu{
-      padding-left: 25px;
+      padding-left: 35px;
       display: flex;
       font-size: 16px;
       line-height: 3;
@@ -75,6 +76,12 @@
       font-size: 12px;
       gap: 25px;
       align-items: center;
+   }
+
+   &__link{
+      color: var(--color-text-dark);
+   
+   
    }
 
    
