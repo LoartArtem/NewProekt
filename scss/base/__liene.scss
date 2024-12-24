@@ -10,7 +10,7 @@
    .liene::before {
       display: block;
       width: 60px;
-      height: 2px; /* Высота линии */
+      height: 1px; /* Высота линии */
       background-color: var(--color-text-dark); /* Цвет линии */
       content: ""; /* Обязательно для отображения псевдоэлемента */
       position: absolute;

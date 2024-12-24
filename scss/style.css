@@ -80,7 +80,7 @@
 .liene::before {
   display: block;
   width: 60px;
-  height: 2px; /* Высота линии */
+  height: 1px; /* Высота линии */
   background-color: var(--color-text-dark); /* Цвет линии */
   content: ""; /* Обязательно для отображения псевдоэлемента */
   position: absolute;
@@ -289,11 +289,12 @@ body {
 .hero-section__title {
   font-size: 72px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 .hero-section__text {
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.8;
   color: var(--color-text-sub);
 }
 
@@ -414,7 +415,8 @@ body {
 .histori-section {
   height: 679px;
   background-color: var(--color-text);
-  padding-bottom: 50px;
+  padding-top: 125px;
+  text-transform: uppercase;
 }
 .histori-section__flex {
   display: flex;
