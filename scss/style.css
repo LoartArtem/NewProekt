@@ -186,7 +186,7 @@ body {
   max-width: 1170px; /*-Максимальная ширина при растягивании -*/
   width: 100%; /*-Отображает всегда полностью не сжимая -*/
   margin: 0 auto; /*-Центрируем по центру текст -*/
-  padding: 0px 5px; /*-Что-бы контенер не прилипал -*/
+  padding: 0px 10px; /*-Что-бы контенер не прилипал -*/
 }
 
 .title {
@@ -372,6 +372,7 @@ body {
 .masters-section {
   background-color: var(--color-text-begraund);
   height: 890px;
+  padding-top: 80px;
 }
 .masters-section__flex {
   display: flex;
@@ -384,11 +385,26 @@ body {
   height: 502px;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid gold;
 }
 .masters-section__item-foto {
   max-width: 370px;
   max-height: 246px;
+}
+.masters-section__item-tekst {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+.masters-section__name {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-text-dark);
+  line-height: 25px;
+}
+.masters-section__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-text-hover);
 }
 .masters-section__item-icon {
   display: flex;

@@ -1,6 +1,7 @@
 .masters-section{
    background-color: var(--color-text-begraund);
    height: 890px;
+   padding-top: 80px;
 
    &__flex{
       display: flex;
@@ -16,14 +17,31 @@
       height: 502px;
       justify-content: space-between;
       align-items: center;
-      border: 2px solid gold;
-   
    }
 
    &__item-foto{
       max-width: 370px;
       max-height: 246px;
-      
+   }
+   
+   &__item-tekst{
+      display: flex;
+      flex-direction: column;
+      padding-top: 80px;
+   }
+
+   &__name{
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--color-text-dark);
+      line-height: 25px;
+   }
+
+   &__text{
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--color-text-hover);
+   
    }
 
    &__item-icon{
