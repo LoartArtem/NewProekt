@@ -428,9 +428,21 @@ body {
   width: 270px;
 }
 
-.contact-section {
+.contact-section__flex {
+  display: flex;
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+}
+.contact-section__flex-item1 {
   height: 644px;
-  background-color: blueviolet;
+  width: 50%;
+  background-color: var(--color-text-footer);
+}
+.contact-section__flex-item2 {
+  height: 644px;
+  width: 50%;
+  background-image: url("/img/Bg.png");
+  background-color: var(--color-text-footer);
 }
 
 .footer {
