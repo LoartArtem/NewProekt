@@ -435,14 +435,34 @@ body {
 }
 .contact-section__flex-item1 {
   height: 644px;
+  padding: 150px 0px 0px 55px;
   width: 50%;
+  padding-left: 55px;
   background-color: var(--color-text-footer);
 }
 .contact-section__flex-item2 {
+  padding: 150px 0px 0px 55px;
   height: 644px;
   width: 50%;
   background-image: url("/img/Bg.png");
   background-color: var(--color-text-footer);
+}
+.contact-section__title {
+  color: var(--color-text);
+}
+.contact-section__social {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-text-sub);
+  display: flex; /* Включаем Flexbox */
+  align-items: center; /* Выравниваем элементы по вертикали */
+  gap: 15px; /* Расстояние между иконкой и текстом */
+  font-size: 18px; /* Устанавливаем размер текста */
+  line-height: 1.5; /* Добавляем удобный интервал между строками */
+}
+.contact-section__social img {
+  width: 24px; /* Устанавливаем размер иконки */
+  height: 24px; /* Чтобы иконка не была слишком большой */
 }
 
 .footer {

@@ -4,21 +4,45 @@
    &__flex{
       display: flex;
       
+      
       justify-content: center; /* Выравнивание по горизонтали */
       align-items: center; /* Выравнивание по вертикали */
    }
 
    &__flex-item1{
       height: 644px;
+      padding: 150px 0px 0px 55px;
       width: 50%;
+      padding-left: 55px;
       background-color: var(--color-text-footer);
       
    }
 
    &__flex-item2{
+      padding: 150px 0px 0px 55px;
       height: 644px;
       width: 50%;
       background-image: url('/img/Bg.png');
       background-color: var(--color-text-footer);
+   }
+
+   &__title{
+      color: var(--color-text);
+   }
+
+   &__social{
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--color-text-sub);
+      display: flex; /* Включаем Flexbox */
+      align-items: center; /* Выравниваем элементы по вертикали */
+      gap: 15px; /* Расстояние между иконкой и текстом */
+      font-size: 18px; /* Устанавливаем размер текста */
+      line-height: 1.5; /* Добавляем удобный интервал между строками */
+   }
+
+   &__social img {
+      width: 24px; /* Устанавливаем размер иконки */
+      height: 24px; /* Чтобы иконка не была слишком большой */
    }
 }
