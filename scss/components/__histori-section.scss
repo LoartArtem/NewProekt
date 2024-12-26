@@ -15,10 +15,12 @@
 
       @media screen and (max-width: $bp-desktop){
          gap: 15px;
+         height: 100%;
          }
       
       @media screen and (max-width: $bp-mobile){
             flex-direction: column;
+            height: 100%;
          }
    }
 
