@@ -433,11 +433,13 @@ body {
 @media screen and (max-width: 1280px) {
   .histori-section {
     padding: 0px 40px;
+    padding-top: 75px;
   }
 }
 .histori-section__flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 25px;
 }
 @media screen and (max-width: 1280px) {
@@ -486,7 +488,7 @@ body {
 }
 .contact-section__flex-item1 {
   height: 644px;
-  padding: 150px 0px 0px 55px;
+  padding: 150px 0px 0px 0px;
   width: 50%;
   padding-left: 55px;
   background-color: var(--color-text-footer);

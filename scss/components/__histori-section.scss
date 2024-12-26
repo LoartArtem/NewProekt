@@ -6,11 +6,13 @@
 
    @media screen and (max-width: $bp-desktop){
       padding: 0px 40px;
+      padding-top: 75px;
       }
 
    &__flex{
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding-top: 25px;
 
       @media screen and (max-width: $bp-desktop){
