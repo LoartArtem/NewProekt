@@ -5,4 +5,14 @@
    width: 100%; /*-Отображает всегда полностью не сжимая -*/
    margin: 0 auto; /*-Центрируем по центру текст -*/
    padding: 0px 10px; /*-Что-бы контенер не прилипал -*/
+
+   @media screen and (max-width: $bp-desktop){
+      max-width: 690px;  /*-Максимальная ширина при растягивании -*/
+      width: 100%;
+      }
+   
+   @media screen and (max-width: $bp-mobile){
+         max-width: 418px;  /*-Максимальная ширина при растягивании -*/
+         width: 100%;
+      }
 }

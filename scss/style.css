@@ -188,6 +188,18 @@ body {
   margin: 0 auto; /*-Центрируем по центру текст -*/
   padding: 0px 10px; /*-Что-бы контенер не прилипал -*/
 }
+@media screen and (max-width: 1280px) {
+  .container {
+    max-width: 690px; /*-Максимальная ширина при растягивании -*/
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 418px; /*-Максимальная ширина при растягивании -*/
+    width: 100%;
+  }
+}
 
 .title {
   color: var(--color-text-dark);
@@ -418,14 +430,41 @@ body {
   padding-top: 125px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1280px) {
+  .histori-section {
+    padding: 0px 40px;
+  }
+}
 .histori-section__flex {
   display: flex;
   justify-content: space-between;
   padding-top: 25px;
 }
+@media screen and (max-width: 1280px) {
+  .histori-section__flex {
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .histori-section__flex {
+    flex-direction: column;
+  }
+}
 .histori-section__flex-item {
   height: 360px;
   width: 270px;
+}
+@media screen and (max-width: 1280px) {
+  .histori-section__flex-item {
+    height: 360px;
+    width: 330px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .histori-section__flex-item {
+    height: 360px;
+    width: 418px;
+  }
 }
 
 .contact-section__flex {
@@ -476,12 +515,20 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .footer__container {
+    height: 138px;
+  }
+}
 .footer__blank {
   color: rgb(157, 164, 189);
+  align-items: center;
+  line-height: 0px;
 }
 .footer__social {
   display: flex;
   gap: 30px;
-  color: rgb(157, 164, 189);
-  background-color: aqua;
+}
+.footer__social-link {
+  color: var(--color-text-dark);
 }/*# sourceMappingURL=style.css.map */

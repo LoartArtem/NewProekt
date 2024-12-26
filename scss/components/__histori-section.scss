@@ -4,18 +4,36 @@
    padding-top: 125px;
    text-transform: uppercase;
 
+   @media screen and (max-width: $bp-desktop){
+      padding: 0px 40px;
+      }
+
    &__flex{
       display: flex;
       justify-content: space-between;
       padding-top: 25px;
+
+      @media screen and (max-width: $bp-desktop){
+         gap: 15px;
+         }
+      
+      @media screen and (max-width: $bp-mobile){
+            flex-direction: column;
+         }
    }
 
    &__flex-item{
       height: 360px;
       width: 270px;
-      
-   
-   }
-   
 
+      @media screen and (max-width: $bp-desktop){
+         height: 360px;
+         width: 330px;
+         }
+      
+      @media screen and (max-width: $bp-mobile){
+            height: 360px;
+            width: 418px;
+         }
+   }
 }

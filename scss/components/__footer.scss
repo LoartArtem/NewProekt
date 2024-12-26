@@ -9,18 +9,27 @@
       font-weight: 600;
       justify-content: space-between;
       align-items: center;
+
+      @media screen and (max-width: $bp-mobile){
+         height: 138px;
+      }
    }
 
    &__blank{
       color: rgba(157, 164, 189, 1);
+      align-items: center;
+      line-height: 0px;
 
    }
 
    &__social{
       display: flex;
       gap: 30px;
-      color: rgba(157, 164, 189, 1);
-      background-color: aqua;
+      
+   }
+
+   &__social-link{
+      color: var(--color-text-dark);
    }
 
 }
